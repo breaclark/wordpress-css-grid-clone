@@ -23,6 +23,39 @@ header {
   padding: 25px 60px;
 }
 
+nav {
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 25px;
+}
+
+.nav-item ul {
+  background-color: #fff;
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 200;
+  opacity: 0;
+  padding: 20px 20px 10px;
+  position: absolute;
+  text-transform: uppercase;
+  transition-delay: 1s;
+  transition: opacity 0.6s, visibility 0s 0.6s;
+  visibility: hidden;
+}
+
+.nav-item:hover ul {
+  opacity: 1;
+  transition-delay: 1s;
+  transition: opacity 0.4s;
+  visibility: inherit;
+}
+
+.nav-item li {
+  margin: 10px 0;
+}
+
 nav ul {
   display: flex;
 }
@@ -30,6 +63,11 @@ nav ul {
 nav li {
   list-style: none;
   margin-right: 25px;
+}
+
+footer {
+  background-color: #fff;
+  height: 60px;
 }
 
 a, a:visited {
