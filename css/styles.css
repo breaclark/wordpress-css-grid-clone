@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue';
+}
+
+h1 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+header {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 25px 60px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin-right: 25px;
+}
+
+a, a:visited {
+  color: #151515;
+  font-size: 0.75rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #75d69c;
+}
+
+.sidebar {
+  align-items: center;
+  background-color: #fff;
+  color: #bebebe;
+  display: flex;
+  font-size: 8pt;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 60px;
+}
+
+.left-bar {
+  left: 0;
+}
+
+.right-bar {
+  right: 0;
+}
+
+.left-bar p {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
+
+.right-bar p {
+  transform: rotate(90deg);
+  white-space: nowrap;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(4, 24vw);
+  grid-auto-rows: 24vw;
+}
+
+.wide {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.tile:nth-child(1) {
+  background-color: #fcf0bc;
+}
+
+.tile:nth-child(2) {
+  background-color: #fdd4ce;
+}
+
+.tile:nth-child(3) {
+  background-color: #deece7;
+}
+
+.tile:nth-child(4) {
+  background-color: #82cab1;
+}
+
+.tile:nth-child(5) {
+  background-color: #f3dddd;
+}
+
+.tile:nth-child(6) {
+  background-color: #bfc5d9;
+}
+
+.tile:nth-child(7) {
+  background-color: #f26649;
+}
+
+.tile:nth-child(8) {
+  background-color: #b7b7b7;
+}
+
+@media screen and (max-width: 75em) {
+  nav ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 64em) {
+  .grid {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: 100vw;
+    grid-auto-rows: 50vw;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .tile {
+    grid-row: span 2;
+  }
+
+  .wide {
+    grid-row: span 1;
+  }
+}
