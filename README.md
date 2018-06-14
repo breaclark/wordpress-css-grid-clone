@@ -4,6 +4,17 @@
 
 #### By **Brea Clark**
 
+## Screenshots
+
+#### Original
+
+#### Clone
+
+## Setup/Installation Requirements
+
+* Clone Repository
+* Open index.html in browser
+
 ## Known Bugs
 * No known bugs.
 
